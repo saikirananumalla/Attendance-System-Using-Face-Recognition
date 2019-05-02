@@ -1,0 +1,52 @@
+.container {
+  width:900px;
+  height: 150px;
+}
+
+header {
+  width:900px;
+  float:left;
+  height: 50px;
+}
+
+.logo {
+  float: left;
+  padding: 15px
+}
+
+.menu {
+  float: right;
+  padding: 15px
+}
+
+.first-box {
+  width:300px;
+  float:left;
+}
+
+.first-box p {
+  padding-left: 80px;
+  padding-top: 50px;
+}
+
+.second-box {
+  width:300px;
+  height: 150px;
+  float:right;
+  margin: 50px
+}
+
+.second-box p {
+  padding-left: 110px;
+  padding-top: 50px;
+}
+
+footer {
+  width:900px;
+  float:left;
+  height: 50px;
+}
+
+footer div {
+  padding: 15px;
+}
