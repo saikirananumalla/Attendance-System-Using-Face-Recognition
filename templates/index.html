@@ -1,0 +1,423 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
+<head>
+
+  <!-- Meta tags & title /-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>FaceD - Attendace </title>
+  <meta name="description" content="This template is an easy to use app landing page, responsive and pretty easy to customize including some great easing effects, modal window, a sticky header with share buttons & others stuff !" />
+  <meta name="keywords" content="Free, template, easy to use, customise, one page, template, simple, minimal, landing page, app page, supview" />
+  <meta name="author" content="Supview - François Martin">
+
+  <!-- Favicon /-->
+  <link rel="shortcut icon" href="static/favicon.png" type="image/x-icon" /> <!-- Favicon /-->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Stylesheets /-->
+  <link rel="stylesheet" href="static/css/gumby.css">   			<!-- Gumby Framework /-->
+  <link rel="stylesheet" href="static/css/style.css">   			<!-- Main stylesheet /-->
+  <link rel="stylesheet" href="static/css/animate.css"> 			<!-- Animations /-->
+
+
+  <script src="static/js/modernizr-2.6.2.min.js"></script>  <!-- Modernizr /-->
+
+</head>
+
+
+<body>
+
+<!-- Preload the Whole Page -->
+
+<div id="preloader">
+<div id="loading-animation">&nbsp;</div>
+</div>
+
+
+<!-- NAVIGATION ############################################### -->
+
+
+		<div class="cbp-af-header">
+
+			<nav >
+
+				<!--  Share DIV-->
+
+				 <div class="right">
+
+					<!--  Facebook Share Button-->
+
+				 	<!-- Twitter Share Button -->
+
+
+				 </div> <!-- End Share dIV -->
+
+				 <!-- Logo -->
+
+				 <div id="logo">
+
+				 	<a href="#"><img alt="Logo" src="static/img/logo.png"></a>
+
+				 </div>
+
+				 <!-- Links -->
+
+				 <ul id="nav" >
+
+					 <li><a href="https://saikisblog.blogspot.com/">The Admin</a></li>
+
+
+
+				 </ul>
+
+			</nav>
+
+
+		</div>
+
+<!-- END NAVIGATION ############################################### -->
+
+
+<!-- HEADER / FIRST SECTION ############################################### -->
+
+
+<section class="page1">
+
+		      	<!-- Huge Title centered -->
+
+		        <div class="huge-title centered">
+
+		          <!-- This Logo is only displayed on Tablet/iPhone !-->
+
+		          <h1>A Simple & Easy To Use Attendance Management system</h1>
+
+		          <div class="space"></div>
+
+		          <a href="#container" class="button-white goto">Discover more</a>
+
+		  	    </div>
+
+		  	    <!-- IMG DISCOVER MORE -->
+
+		  	    <div class="go-down twelve columns">
+
+		  	      <a href="#container" class="goto"><img src="static/img/down.png" alt="MORE"></a>
+
+		  	    </div>
+
+</section>
+
+
+<!-- END HEADER ############################################### -->
+
+
+
+<!-- BEGIN CONTAINER ############################################### -->
+
+
+<div id="container" class="container">
+
+
+<!-- SECOND SECTION ############################################### -->
+
+
+<section class="page2">
+
+	<div class="row">
+
+				<div class="six columns article make-it-appear-right">
+
+					<!-- Title -->
+
+					<h3>Register Here </h3>
+
+					<!-- Content -->
+
+					<p>You can register here.Move your head while the webcam opens for better results.<b></b> Admin will confirm your training once you've recorded your face.</p>
+                    <h1><a href="/train"></a></h1>
+					<div class="space"></div>
+
+					<a  class="js-open-modal button-blue" href="/train">Train Button</a>
+
+
+				</div>
+
+				<!-- Image from right -->
+
+				<div class="five columns picture make-it-appear-left" >
+
+					<img src="static/regis.jpg" alt="EXEMPLE">
+
+				</div>
+
+			</div> <!-- End row div -->
+
+</section>
+
+<!-- END SECOND SECTION ############################################### -->
+
+
+
+
+<!-- TIRTH SECTION ############################################### -->
+
+
+<section class="page3" >
+
+	<div class="row">
+
+				<!-- Image from left -->
+
+				<div class="five columns picture make-it-appear-right" >
+
+					<img src="static/mark.jpg" alt="EXEMPLE">
+
+				</div>
+
+
+				<div class="six columns article make-it-appear-left">
+
+					<!-- Title -->
+
+					<h3>Mark Your Attendance Here</h3>
+
+					<!-- Content -->
+
+					<p>Click the button below to mark your attendance. <b></b>This model is prepared using opencv and uses its fisher face recognizer to prepare the model for testing.</p>
+
+					<div class="space"></div>
+
+					<a class="js-open-modal button-green" href="/test">Mark my attendance</a>
+
+				</div>
+
+
+			</div> <!-- End row div -->
+</section>
+
+<!-- END TIRTH SECTION ############################################### -->
+
+
+
+<!-- Modal Window -->
+
+<div class='modal' id='modal'>
+
+	  <div class='modal-content modal-anim--three'>
+
+		<iframe src="//player.vimeo.com/video/64291127?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="560" height="306" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+	  </div>
+
+</div>
+
+<section class="page2">
+
+	<div class="row">
+
+				<div class="six columns article make-it-appear-right">
+
+					<!-- Title -->
+
+					<h3>Admin's Page </h3>
+
+					<!-- Content -->
+
+					<p>The training is done by admin after checking the registered images.<b></b> This will generate a .yml file from the model which is used to predict faces.</p>
+                    <h1><a href="/train"></a></h1>
+					<div class="space"></div>
+
+					<a  class="js-open-modal button-blue" href="/adminT">*Train Images*</a>
+
+
+				</div>
+
+				<!-- Image from right -->
+
+				<div class="five columns picture make-it-appear-left" >
+
+					<img src="static/admin.png" alt="EXEMPLE">
+
+				</div>
+
+			</div> <!-- End row div -->
+
+</section>
+
+<!-- END SECOND SECTION #######################
+
+<!- FOURTH SECTION ############################################### -->
+
+
+
+<section class="page4">
+
+	<div class="row">
+
+				<div class="four columns article make-it-appear-right">
+
+					<!-- Title -->
+
+					<h3>Pretty Simple and Detailed Code.</h3>
+
+					<!-- Content -->
+
+					<p>Here is a small snippet of the code, as you can see, opencv and pandas are made use of.Here is the link for the source code</p>
+                    <a href="https://github.com/saikeyRUN/Attendace-Using-Face-Recognition">Follow This Link</a>
+					<div class="space"></div>
+
+
+				</div>
+
+				<!-- Image -->
+
+				<div class="seven columns picture make-it-appear-left" >
+
+<pre>
+    model = cv2.face.FisherFaceRecognizer_create()
+    model.train(images, lables)
+    import pandas as pd
+    ca=pd.read_csv('att.csv')
+    ca.set_index('Name',inplace=True)
+    prd=str(datetime.date.today())
+
+    # Part 2: Use fisherRecognizer on camera stream
+    haar_cascade = cv2.CascadeClassifier(fn_haar)
+    webcam = cv2.VideoCapture(0)
+    faces = haar_cascade.detectMultiScale(mini)
+    for i in range(len(faces)):
+        face_i = faces[i]
+
+        # Coordinates of face after scaling back by 'size'
+        (x, y, w, h) = [v * size for v in face_i]
+        face = gray[y:y + h, x:x + w]
+        face_resize = cv2.resize(face, (im_width, im_height))
+
+        # Try to recognize the face
+        prediction = model.predict(face_resize)
+        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255),5)
+
+        # [1]
+        # Write the name of recognized face ,prediction[1]/10,-%.0f
+        cv2.putText(frame,
+           '%s' % (names[prediction[0]]),
+           (x-5, y-5), cv2.FONT_HERSHEY_DUPLEX,1,(0,255,0))
+</pre>
+
+				</div>
+
+			</div> <!-- End row div -->
+
+</section>
+
+
+<!-- END FOURTH SECTION ############################################### -->
+
+
+
+<!-- FIFTH SECTION ############################################### -->
+
+
+<section class="page5">
+
+
+		    <div class="row">
+
+		    	<!-- Article centered on the Page -->
+
+				<div class="twelve columns centered make-it-appear-top">
+
+					<!-- Title -->
+
+					<h4>The Instructor:</h4>
+
+					<!-- Content -->
+                    <h5><p>Prof.S.K.Singh</p></h5>
+                    <h5><p>Department of Computer Sc.& Engineering</p></h5>
+                    <h5><p>IIT BHU Varanasi</p></h5>
+					<a href="https://www.old.iitbhu.ac.in/cse/index.php/people/faculty/25.html">Follow This Link</a>
+
+
+
+				</div>
+
+
+		    </div>
+
+
+</section>
+
+
+<!-- END FIFTH SECTION ############################################### -->
+
+
+<!-- FOOTER SECTION ############################################### -->
+
+
+<section class="footer">
+
+
+		    <div class="row">
+
+		    	<!-- Article centered on the Page -->
+
+				<div class="nine columns centered">
+
+					<!-- Nav Footer -->
+
+					<ul>
+						<li><a href="https://saikisblog.blogspot.com/">My Blog</a> </li>
+						<li> <a href="https://www.facebook.com/saikiran.anumalla.9" rel="nofollow">Facebook</a> </li>
+						<li> <a href="https://twitter.com/saikirunn" rel="nofollow">Twitter</a> </li>
+					</ul>
+
+					<!-- Title -->
+					<!-- Logo -->
+
+
+				</div>
+
+
+		    </div>
+
+
+</section>
+
+
+<!-- END FOOTER SECTION ############################################### -->
+
+
+
+
+
+</div> <!-- end of container -->
+
+
+  <!-- Grab Google CDN's jQuery, fall back to local if offline -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="static/js/jquery-1.9.1.min.js"><\/script>')</script>
+
+  <script src="static/js/main.js" type="text/javascript"></script> 								<!-- Main Javascript File -->
+  <script src="static/js/classie.js" type="text/javascript"></script> 								<!-- Scroll from left & right -->
+  <script src="static/js/waypoints.min.js" type="text/javascript"></script>						<!-- Waypoints -->
+  <script src="static/js/jquery.scrollto.js" type="text/javascript"></script> 						<!-- ScrollTo -->
+  <script src="static/js/mediaCheck.js" type="text/javascript"></script> 							<!-- MediaCheck -->
+
+
+
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <!--<script>
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>  -->
+
+  </body>
+
+</html>

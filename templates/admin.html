@@ -1,0 +1,69 @@
+{% load static %}
+<html>
+    <head>
+        <title>FaceD</title>
+        <script src="static/script.js"></script>
+        <style>input {
+                outline:none;
+            }
+            .center{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            form{
+                text-align: center;
+            }
+            #id_query{
+                border-radius: 25px;
+                border: 2px solid rgb(134, 74, 125);
+                padding: 20px;
+                width: 200px;
+                height: 15px;
+            }
+            #result{
+                font-size : 15px;
+                padding-left: 50px;
+            }
+            #link{
+                color: rgb(10, 101, 36);
+                font-size: 15px;
+                padding-left: 50px;
+                padding-bottom: 0px;
+                line-height: 50%;
+            }
+            #heading{
+                color: rgb(134, 74, 125);
+                text-align: center;
+                font-weight: bold;
+            }
+
+            a{
+                padding-left: 50px;
+                color: rgb(49, 49, 160);
+                font-size: 20px;
+                padding-bottom: 0px;
+                line-height: 50%;
+            }
+    </style>
+    </head>
+    <body>
+        <p id="heading">---------ENTER USER PASSWORD IN THE FILED PRESENT----------</p>
+        <p id="heading"><span style="text-decoration: underline;"><em><strong><span style="color: #000000; text-decoration: underline;">ENTERING INCORRECT PASSWORD WILL TAKE YOU BACK TO HOME PAGE</span></strong></em></span></p>
+        <p id="heading">------THE TRAINIG PROCESS WILL TAKE A MINUTE OR TWO--------</p>
+        <img src="static/train.png" height="300" class="center"  width="500px" alt="campus-logo" >
+        {% ifequal request.method 'POST' %}
+        {% else %}
+        <form method="post">
+            {% csrf_token %}
+            <input style="width:400px; font-size: 15px;" placeholder="Enter your password here..." type="text" name="name" value="{{fsave}}" maxlength="500",required="id_query">
+            <input type="submit" value="Submit">
+        </form>
+        {% endifequal %}
+    </body>
+</html>
+<body>
+<a href="/"><p style="text-align:center">Go to home page</p></a>
+</body>
+<a href="/loadcsv"><p style="text-align:center">Attendance List</p></a> 
+<a href="napp/att.csv" download><p style="text-align:center">Download Attendance Sheet</p></a>
