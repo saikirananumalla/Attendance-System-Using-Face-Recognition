@@ -6,13 +6,13 @@ Open-cv’s inbuilt cascades like haar_cascade frontal face detector are employe
 Finally, a web-app was created with an interference to register and to mark their attendance using webcam capture for localhost and image upload for online webapp .   
 
 To run the project 
->>>pip install opencv-contrib-python
->>>pip install Pillow
->>>pip install pandas
->>>pip install django==2.1.5
->>>python manage.py makemigrations
->>>python manage.py migrate
->>>python manage.py runserver
+pip install opencv-contrib-python
+pip install Pillow
+pip install pandas
+pip install django==2.1.5
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
 
 Working demo can be found here : https://www.youtube.com/watch?v=mZftbFmFAd4
 Webapp based on this can be found here: https://saiky.pythonanywhere.com
