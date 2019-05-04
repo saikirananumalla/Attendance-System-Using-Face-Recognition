@@ -1,18 +1,41 @@
 # exploratory-project-sem4
-“Attendance System using Face Recognition”  is an automated attendance management system model developed to tackle the challenges with existing attendance system such as wastage of time during lectures , mis-marking of attendance, proxy etc… 
 
-Open-cv’s inbuilt cascades like haar_cascade frontal face detector are employed to identify faces from the images ,this serves the face detection part. For face recognition, LBP algorithm is implemented using the lbph face recognizer, which is the best among other opencv face recognizers available.
+Attendance Management System
 
-Finally, a web-app was created with an interference to register and to mark their attendance using webcam capture for localhost and image upload for online webapp .   
+A Django based App which uses feature extraction and feature matching techniques for cattle identification. This webapp is also hosted at https://saiky.pythonanywhere.com 
 
-To run the project 
-pip install opencv-contrib-python
-pip install Pillow
-pip install pandas
-pip install django==2.1.5
-python manage.py makemigrations
-python manage.py migrate
-python manage.py runserver
+Installation
+
+Make sure you have Python3.6 installed. We recommend to use a virtual environment.To activate the virtual environment 
+
+$ source (name_of_virtual_envm)/bin/activate
+
+
+
+To install the dependencies , use 
+ 
+$ pip install -r requirements.txt
+ 
+Usage
+
+After installation is done. Then activate the virtual environment and go to the project19 directory in terminal and then use
+
+$ python manage.py runserver
+
+Then open the url displayed in the terminal.
+
+File Description
+
+The files in the project directory include
+	-project19
+	-requirements.txt
+
+project19 : Contains all the files related to Django project.
+requirements.txt : The dependencies of the project.
+
+Info
+
+Name: Sai Kiran Anumalla
+Email: saikiran.anumalla.cse17@itbhu.ac.in
 
 Working demo can be found here : https://www.youtube.com/watch?v=mZftbFmFAd4
-Webapp based on this can be found here: https://saiky.pythonanywhere.com
