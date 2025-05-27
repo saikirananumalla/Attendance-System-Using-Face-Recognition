@@ -1,41 +1,38 @@
-# exploratory-project-sem4
+# 🎓 Attendance System Using Face Recognition
 
-Attendance Management System
+A Django-based web application for automated attendance management using facial recognition. Originally developed as a semester project, this system leverages Haar Cascades for real-time face detection and matches faces against a stored database to mark attendance.
 
-A Django based App which uses feature extraction and feature matching techniques for cattle identification. This webapp is also hosted at https://saiky.pythonanywhere.com 
+🌐 **Live Demo**: [https://saiky.pythonanywhere.com](https://saiky.pythonanywhere.com)
 
-Installation
+## 🚀 Features
 
-Make sure you have Python3.6 installed. We recommend to use a virtual environment.To activate the virtual environment 
+- Real-time face detection and recognition using OpenCV
+- Attendance records stored in a SQLite database
+- Admin dashboard for managing sessions
+- Simple web UI using Django templates and static files
 
-$ source (name_of_virtual_envm)/bin/activate
+## 🛠 Tech Stack
 
+- **Backend**: Django, SQLite
+- **Frontend**: HTML, CSS (Django Templates)
+- **Computer Vision**: OpenCV, Haar Cascade Classifier
+- **Language**: Python 3.6+
 
+## 📦 Installation
 
-To install the dependencies , use 
- 
-$ pip install -r requirements.txt
- 
-Usage
+> Ensure Python 3.6+ is installed. Use a virtual environment for better dependency management.
 
-After installation is done. Then activate the virtual environment and go to the project19 directory in terminal and then use
+```bash
+# Clone the repository
+git clone https://github.com/saikirananumalla/Attendance-System-Using-Face-Recognition.git
+cd Attendance-System-Using-Face-Recognition
 
-$ python manage.py runserver
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
-Then open the url displayed in the terminal.
+# Install dependencies
+pip install -r requirements.txt
 
-File Description
-
-The files in the project directory include
-	-project19
-	-requirements.txt
-
-project19 : Contains all the files related to Django project.
-requirements.txt : The dependencies of the project.
-
-Info
-
-Name: Sai Kiran Anumalla
-Email: saikiran.anumalla.cse17@itbhu.ac.in
-
-Working demo can be found here : https://www.youtube.com/watch?v=mZftbFmFAd4
+# Run the app
+python manage.py runserver
